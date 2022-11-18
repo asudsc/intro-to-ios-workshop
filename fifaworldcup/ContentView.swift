@@ -8,15 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    
+    @State private var searchText: String = ""
+    
+    var searchResults: [Team] {
+        if searchText.isEmpty {
+            return teamsList
+        } else {
+            return teamsList.filter { team in
+                team.name.contains(searchText)
+            }
         }
-        .padding()
     }
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(searchResults) { team in
+                    NavigationLink(destination: TeamView(selectedTeam: team)) {
+                        Text(team.flag + " " + team.name)
+                    }
+                }
+            }
+            .searchable(text: $searchText)
+            .navigationTitle("⚽️ World Cup Teams")
+        }
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

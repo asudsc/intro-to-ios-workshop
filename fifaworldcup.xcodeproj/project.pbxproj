@@ -11,6 +11,8 @@
 		B37FBE0F2925F364001B3083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37FBE0E2925F364001B3083 /* ContentView.swift */; };
 		B37FBE112925F364001B3083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37FBE102925F364001B3083 /* Assets.xcassets */; };
 		B37FBE142925F364001B3083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37FBE132925F364001B3083 /* Preview Assets.xcassets */; };
+		B37FBE1D2925F5E2001B3083 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37FBE1C2925F5E2001B3083 /* TeamView.swift */; };
+		B37FBE1F2925F85F001B3083 /* TeamsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37FBE1E2925F85F001B3083 /* TeamsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B37FBE0E2925F364001B3083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B37FBE102925F364001B3083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B37FBE132925F364001B3083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B37FBE1C2925F5E2001B3083 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		B37FBE1E2925F85F001B3083 /* TeamsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		B37FBE0B2925F364001B3083 /* fifaworldcup */ = {
 			isa = PBXGroup;
 			children = (
+				B37FBE1E2925F85F001B3083 /* TeamsList.swift */,
 				B37FBE0C2925F364001B3083 /* fifaworldcupApp.swift */,
 				B37FBE0E2925F364001B3083 /* ContentView.swift */,
 				B37FBE102925F364001B3083 /* Assets.xcassets */,
 				B37FBE122925F364001B3083 /* Preview Content */,
+				B37FBE1C2925F5E2001B3083 /* TeamView.swift */,
 			);
 			path = fifaworldcup;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37FBE1F2925F85F001B3083 /* TeamsList.swift in Sources */,
 				B37FBE0F2925F364001B3083 /* ContentView.swift in Sources */,
 				B37FBE0D2925F364001B3083 /* fifaworldcupApp.swift in Sources */,
+				B37FBE1D2925F5E2001B3083 /* TeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
